@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.scss';
+import dataSearch2 from './components/Data.json';
+import { SearchWithDropdown } from './components/SearchWithDropdown/SearchWithDropdown';
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <SearchWithDropdown data={dataSearch2} />
   </React.StrictMode>
-)
+);
